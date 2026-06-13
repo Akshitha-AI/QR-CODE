@@ -1,0 +1,10 @@
+services:
+  qr-code-generator:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./generated:/app/generated
+      - ./data:/app/data
+    environment:
+      - SECRET_KEY=replace-in-production
