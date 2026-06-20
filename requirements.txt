@@ -2,8 +2,4 @@ Flask==3.0.3
 Flask-CORS==4.0.1
 Pillow
 qrcode==7.4.2
-Flask==3.0.3
-Flask-CORS==4.0.1
-Pillow
-qrcode==7.4.2
 pandas==2.2.2
