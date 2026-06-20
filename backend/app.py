@@ -1,20 +1,15 @@
 from __future__ import annotations
-
 from pathlib import Path
-
 from flask import Flask, send_from_directory
 from flask_cors import CORS
-
 from config import Config, GENERATED_DIR, HISTORY_FILE
 from routes.qr_routes import qr_bp
 from utils.file_handler import ensure_storage
-
 
 FRONTEND_DIR = Path(__file__).resolve().parents[1] / "frontend"
 SRC_DIR = Path(__file__).resolve().parents[1]
 LIB_DIR = SRC_DIR / "lib"
 COMPONENTS_DIR = SRC_DIR / "components"
-
 
 def create_app() -> Flask:
     app = Flask(__name__, static_folder=str(FRONTEND_DIR), static_url_path="")
@@ -37,9 +32,7 @@ def create_app() -> Flask:
 
     return app
 
-
 app = create_app()
 
-
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=10000, debug=False)
