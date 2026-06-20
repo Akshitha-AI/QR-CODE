@@ -2,7 +2,8 @@ Flask==3.0.3
 Flask-CORS==4.0.1
 Pillow
 qrcode==7.4.2
-pandas==2.0.3; python_version < "3.9"
-pandas==2.2.2; python_version >= "3.9"
-pytest==8.2.2
-pytest-cov==5.0.0
+Flask==3.0.3
+Flask-CORS==4.0.1
+Pillow
+qrcode==7.4.2
+pandas==2.2.2
